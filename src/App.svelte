@@ -54,10 +54,9 @@
 
 		// update REPL with name;
 		// update REPL components
-		// repl.set({ components: source.components	});
+		// repl.set({ components: data.components	});
 
 		// just for illustration
-		// console.log(data);
 		data.components.forEach(({ name, type, source }, idx) => {
 			console.log(`Tab ${idx + 1} Name is: ${name}.${type}`);
 			console.log(`Tab ${idx + 1} Source is : ${source}`);
