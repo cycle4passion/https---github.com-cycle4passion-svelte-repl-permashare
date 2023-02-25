@@ -30,7 +30,7 @@
 		],
 	};
 
-	// update the URL with params data; this would come via a URL click instead
+	// update the URL with params data
 	createPermalink(data, name);
 
 	// now pull in the params data from the URL to update the REPL.
@@ -39,7 +39,7 @@
 	function createPermalink(data, name) {
 		// get existing search params
 		const params = new URLSearchParams(decodeURIComponent(window.location.search));
-		// update search params with new source and name
+		// update search params with new data and name
 		params.set('name', encodeURI(name));
 		params.set('data', encodeURI(JSON.stringify(data)));
 		// write to URL
